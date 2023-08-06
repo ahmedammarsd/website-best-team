@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
 
   return (
    <div>
-    <h1 className="tracking-widest text-red-400 underline">TEST</h1>
+    <Navbar />
    </div>
   )
 }
