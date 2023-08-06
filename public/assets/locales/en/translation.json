@@ -1,0 +1,26 @@
+{
+    "test": "test",
+    "title1": "EDUCATIONAL -INFORMATIVE -ENTERTAINING",
+    "con_title1": "ALL THAT WITH",
+    "title2": "BEST TEAM",
+    "description": "the largest media platform to spread sports and olympic cultrue, develop knowledge and sports analysis , and promote mental and physical entertainment programs in the kingdom of saudi arabia and arab world",
+
+    "link1":"home",
+    "link2":"reality shows",
+    "link3":"services",
+    "link4":"contests",
+    "link5":"about",
+
+    "titleContests" : "Examples of the most successful competitions",
+    "descContests": "These programs gained a high viewership and participation rate, and they have a follower and interactive audience, and they have generated increasing income through sponsorship and interactive messages.",
+
+    "RealityCard1": "Talent & creativity",
+    "RealityCard2": "Celebrities & artists",
+    "RealityCard3": "General information",
+    "RealityCard4": "innovations",
+    "RealityCard5": "personal life",
+    "RealityCard6": "Adventures & endurance",
+    "RealityCard7": "voices & singing",
+    "RealityCard8": "Cooking",
+    "RealityCard9": "fashion"
+}
