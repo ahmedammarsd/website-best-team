@@ -14,6 +14,8 @@
     "titleContests" : "Examples of the most successful competitions",
     "descContests": "These programs gained a high viewership and participation rate, and they have a follower and interactive audience, and they have generated increasing income through sponsorship and interactive messages.",
 
+    "titleReality": "Competitive Realism Programs",
+    "descReality": "These programs entered in the early nineties and include",
     "RealityCard1": "Talent & creativity",
     "RealityCard2": "Celebrities & artists",
     "RealityCard3": "General information",
@@ -22,5 +24,22 @@
     "RealityCard6": "Adventures & endurance",
     "RealityCard7": "voices & singing",
     "RealityCard8": "Cooking",
-    "RealityCard9": "fashion"
+    "RealityCard9": "fashion",
+
+    "titleContestsTopic": "Topics covered by the competition",
+    "topic1": "Mathematical history",
+    "topic2": "sports figures",
+    "topic3": "sports results",
+    "topic4": "Mathematical laws",
+    "topic5": "Sports Events",
+    "topic6": "Mathematical analysis",
+    "topic7": "Olympic Games",
+    "topic8": "Sports photos",
+    "topic9": "Mathematical criticism",
+    "topic10": "Sports media",
+    "topic11": "Sports management",
+    "topic12": "Referees decisions",
+    "topic13": "sports institutions",
+    "topic14": "Sports goals",
+    "topic15": "General knowledge"
 }

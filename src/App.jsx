@@ -3,6 +3,8 @@ import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar';
 import Contests from './components/Contests';
+import RealityShows from "./components/RealityShows"
+import ContestsTopics from './components/ContestsTopics';
 
 
 
@@ -51,6 +53,8 @@ function App() {
     />
     <div className="tw-mt-20"></div>
    <Contests />
+   <RealityShows />
+   <ContestsTopics />
    </div>
   )
 }

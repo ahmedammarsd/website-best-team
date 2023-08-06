@@ -29,6 +29,23 @@ export default {
     extend: {
       backgroundColor:{
         "transparent-black" : "rgba(0,0,0,0.3)",
+        "transparent-white1" : "rgba(255,255,255,0.1)",
+        "transparent-white2" : "rgba(255,255,255,0.2)",
+        "transparent-white3" : "rgba(255,255,255,0.3)",
+        "transparent-white4" : "rgba(255,255,255,0.4)",
+        "transparent-white5" : "rgba(255,255,255,0.5)",
+        "transparent-white6" : "rgba(255,255,255,0.6)",
+      },
+      backgroundImage: {
+        "imgRed": "url('src/images/bg-red.PNG')",
+      },
+      borderColor: {
+        "transparent-white1" : "rgba(255,255,255,0.1)",
+        "transparent-white2" : "rgba(255,255,255,0.2)",
+        "transparent-white3" : "rgba(255,255,255,0.3)",
+        "transparent-white4" : "rgba(255,255,255,0.4)",
+        "transparent-white5" : "rgba(255,255,255,0.5)",
+        "transparent-white6" : "rgba(255,255,255,0.6)",
       },
       zIndex:{
         "1":"1",

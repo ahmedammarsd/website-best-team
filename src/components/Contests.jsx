@@ -18,7 +18,7 @@ const Contests = () => {
                     <div className="tw-flex tw-items-center">
                         <RedHr isTransparent={false} />
                         <span
-                         className="tw-text-3xl lg:tw-text-2xl tw-font-bold tw-text-gray-500 tw-p-5 sm:tw-p-3 tw-whitespace-nowrap sm:tw-text-lg xs:tw-text-sm"
+                         className="tw-text-3xl lg:tw-text-2xl tw-font-bold tw-text-gray-500 tw-p-5 sm:tw-p-3 tw-whitespace-nowrap sm:tw-text-lg xs:tw-text-sm tw-capitalize"
                         >
                             {t("titleContests")}
                         </span>
