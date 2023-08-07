@@ -8,6 +8,7 @@ import { MdMiscellaneousServices } from "react-icons/md";
 import { GiJeweledChalice } from "react-icons/gi";
 import { VscInfo } from "react-icons/vsc";
 import { SiProgress } from "react-icons/si";
+import { ImLocation } from "react-icons/im"
 import SelectLanguage from "./SelectLanguage";
 
 import { useTranslation } from "react-i18next";
@@ -58,7 +59,8 @@ const Navbar = ({language , currenLanguageCode , currenLanguage}) => {
               <Links to="program" name={t("link2")} icon={<SiProgress />} customFunc={handleShowNav} />
               <Links to="" name={t("link3")} icon={<MdMiscellaneousServices />} customFunc={handleShowNav} />
               <Links to="contests" name={t("link4")} icon={<GiJeweledChalice />} customFunc={handleShowNav} />
-              <Links to="company" name={t("link5")} icon={<VscInfo />} customFunc={handleShowNav} />
+              {/* <Links to="company" name={t("link5")} icon={<VscInfo />} customFunc={handleShowNav} /> */}
+              <Links to="company" name={t("link5")} icon={<ImLocation />} customFunc={handleShowNav} />
             </div>
           </div>
           <div>

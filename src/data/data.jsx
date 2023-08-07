@@ -1,11 +1,11 @@
 
 import { FcIdea } from "react-icons/fc";
 import { AiFillStar } from "react-icons/ai";
-import { RiChatSmile3Line , RiChatSmile3Fill } from "react-icons/ri"
-import { MdOutlineMiscellaneousServices ,MdMiscellaneousServices } from "react-icons/md";
-import { FaUserAlt , FaUser } from "react-icons/fa";
+import { RiChatSmile3Line  } from "react-icons/ri"
+import { MdOutlineMiscellaneousServices  } from "react-icons/md";
+import { FaUserAlt  } from "react-icons/fa";
 import { GiDuffelBag } from "react-icons/gi";
-import { BsMusicNoteList } from "react-icons/bs"; import { MdOutlineQueueMusic } from "react-icons/md";
+import { BsMusicNoteList } from "react-icons/bs"; 
 import { GiCook } from "react-icons/gi";
 import { SiRedhat } from "react-icons/si";
 
@@ -97,4 +97,27 @@ export const contestsTopic = [
     {
         topic: "topic15"
     },
-]
+];
+
+// export const dataPie = {
+//     labels: ['إعتادو', 'المشاهير', 'المنافسة', 'الجائزة', ],
+//     datasets: [
+//       {
+//         label: '# of Votes',
+//         data: [10, 20,30, 40 ],
+//         backgroundColor: [
+//           'rgba(153, 102, 255,  .3)',
+//           'rgba(255, 99, 132, .3)',
+//           'rgba(75, 192, 192,  .3)',
+//           'rgba(54, 162, 235,  .3)',
+//         ],
+//         borderColor: [
+//           'rgba(153, 102, 255, 1)',
+//           'rgba(255, 99, 132,1)',
+//           'rgba(75, 192, 192, 1)',
+//           'rgba(54, 162, 235, 1)',
+//         ],
+//         borderWidth: 1,
+//       },
+//     ],
+//   };

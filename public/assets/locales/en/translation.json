@@ -9,7 +9,7 @@
     "link2":"reality shows",
     "link3":"services",
     "link4":"contests",
-    "link5":"about",
+    "link5":"location",
 
     "titleContests" : "Examples of the most successful competitions",
     "descContests": "These programs gained a high viewership and participation rate, and they have a follower and interactive audience, and they have generated increasing income through sponsorship and interactive messages.",
@@ -41,5 +41,14 @@
     "topic12": "Referees decisions",
     "topic13": "sports institutions",
     "topic14": "Sports goals",
-    "topic15": "General knowledge"
+    "topic15": "General knowledge",
+
+    "descCharts": "In a study conducted by the Best Team group among a random sample of viewers of competition programs, the elements that most attracted them to watch the program",
+    "pieTitle1":"Other",
+    "pieTitle2":"Celebrities",
+    "pieTitle3":"Competition",
+    "pieTitle4":"Prize",
+    "buttonMore": "more",
+
+    "location": "Company location"
 }

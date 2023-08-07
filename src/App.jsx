@@ -5,6 +5,9 @@ import Navbar from './components/Navbar';
 import Contests from './components/Contests';
 import RealityShows from "./components/RealityShows"
 import ContestsTopics from './components/ContestsTopics';
+import Charts from './components/Chart';
+import Location from './components/Location';
+import Footer from './components/Footer';
 
 
 
@@ -55,6 +58,9 @@ function App() {
    <Contests />
    <RealityShows />
    <ContestsTopics />
+   <Charts />
+   <Location />
+   <Footer />
    </div>
   )
 }

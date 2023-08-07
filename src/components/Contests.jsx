@@ -11,7 +11,7 @@ import smarter from "../images/smarter.PNG";
 const Contests = () => {
     const { t } = useTranslation();
   return (
-    <div id='contests' className="tw-py-16 tw-relative tw-flex tw-justify-center tw-items-center tw-group">
+    <div id='contests' className="tw-py-16 tw-bg-gray-50 tw-relative tw-flex tw-justify-center tw-items-center tw-group">
         <div className="tw-w-full">
             <div className="tw-w-[85%] tw-px-5 md:tw-px-3 sm:tw-px-2 tw-mx-auto tw-py-6 tw-my-2 tw-overflow-hidden">
                 <div>

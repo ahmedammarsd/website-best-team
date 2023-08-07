@@ -19,7 +19,7 @@ const ContestsTopics = () => {
           </span>
           </div>
           <div 
-           className=" tw-grid tw-grid-cols-5 md:tw-grid-cols-2 tw-gap-4 tw-items-center tw-mt-8"
+           className=" tw-grid tw-grid-cols-5 lg:tw-grid-cols-3 md:tw-grid-cols-2 tw-gap-4 tw-items-center tw-mt-8"
            >
             {
                 contestsTopic.map( ({topic} , index) => (
