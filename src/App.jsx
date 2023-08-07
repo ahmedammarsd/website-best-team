@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+import Aos from 'aos';
 import Navbar from './components/Navbar';
 import Contests from './components/Contests';
 import RealityShows from "./components/RealityShows"
@@ -33,14 +34,19 @@ function App() {
  const currenLanguageCode = localStorage.getItem("i18nextLng") || "en"
  const currenLanguage = language.find(l => l.code === currenLanguageCode);
 
- const changeLang = (code) => {
-  i18next.changeLanguage(code);
-  }
+//  const changeLang = (code) => {
+//   i18next.changeLanguage(code);
+//   }
 
 //END OPERATION LANGUAGE /////////////////////////////
   useEffect( () => {
     document.body.dir = currenLanguage.dir || "ltr"
   },[currenLanguage]);
+
+
+  useEffect( () => {
+    Aos.init();
+  }, [])
 
 
   const { t } = useTranslation();

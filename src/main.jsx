@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './App.jsx';
+import Loading from './components/shared/Loading.jsx';
 import './index.css';
 
 import i18next from 'i18next';
@@ -25,7 +26,7 @@ i18next
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Suspense fallback={<div>LOADING...</div>}>
+  <Suspense fallback={<Loading />}>
   <React.StrictMode>
     <App />
   </React.StrictMode>
