@@ -37,7 +37,7 @@ export default {
         "transparent-white6" : "rgba(255,255,255,0.6)",
       },
       backgroundImage: {
-        "imgRed": "url('src/images/bg-red.PNG')",
+        "imgRed": "url('./src/images/bg-red.PNG')",
       },
       borderColor: {
         "transparent-white1" : "rgba(255,255,255,0.1)",
