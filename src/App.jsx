@@ -41,6 +41,7 @@ function App() {
 //END OPERATION LANGUAGE /////////////////////////////
   useEffect( () => {
     document.body.dir = currenLanguage.dir || "ltr"
+    document.title = t("web_title")
   },[currenLanguage]);
 
 
