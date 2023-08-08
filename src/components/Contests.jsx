@@ -7,6 +7,11 @@ import millon from "../images/millonPNG.PNG";
 import jeopafdy from "../images/jeopafdy.PNG";
 import wakest from "../images/wakest.jpg";
 import smarter from "../images/smarter.PNG";
+import arabIdol from "../images/arabIdol.jpg";
+import celador from "../images/celador.png";
+import endemol from "../images/endemol.jpg";
+import talentpng from "../images/talentpng.png"
+import twoWay from "../images/twoWay.png"
 
 const Contests = () => {
   const { t } = useTranslation();
@@ -40,11 +45,16 @@ const Contests = () => {
                 {t("descContests")}
               </p>
             </div>
-            <div className="tw-grid tw-grid-cols-4 md:tw-grid-cols-2 sm:tw-grid-cols-1 tw-items-center tw-flex-1 tw-gap-1">
+            <div className="tw-grid tw-grid-cols-3 lg:tw-grid-cols-2 sm:tw-grid-cols-2 xs:tw-grid-cols-1 tw-items-center tw-flex-1 tw-gap-1">
               <CardContests image={millon} alt="millon" />
               <CardContests image={jeopafdy} alt="jeopafdy" />
               <CardContests image={wakest} alt="wakest" />
               <CardContests image={smarter} alt="smarter" />
+              <CardContests image={arabIdol} alt="arabIdol" />
+              <CardContests image={celador} alt="celador" />
+              <CardContests image={endemol} alt="endemol" />
+              <CardContests image={talentpng} alt="talentpng" />
+              <CardContests image={twoWay} alt="twoWay" />
             </div>
           </div>
         </div>

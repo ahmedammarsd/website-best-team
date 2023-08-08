@@ -24,7 +24,7 @@ const Navbar = ({ language, currenLanguageCode, currenLanguage }) => {
       {/* START NAV */}
       <div className="tw-p-4 tw-w-full tw-z-10 tw-flex tw-justify-center">
         <div className="tw-flex tw-justify-between tw-items-center tw-w-[85%] lg:tw-w-[90%]">
-          <div className="tw-w-[100px] tw-bg-gray-400 tw-rounded-lg lg:tw-w-[90px] sm:tw-w-[70px]">
+          <div className="tw-w-[100px] tw-bg-gray-300 hover:tw-bg-red-400 tw-cursor-pointer tw-rounded-md lg:tw-w-[90px] sm:tw-w-[70px] tw-duration-300">
             <img src={logo} className="tw-w-full" />
           </div>
 
