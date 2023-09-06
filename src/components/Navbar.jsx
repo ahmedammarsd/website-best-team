@@ -10,31 +10,42 @@ import SelectLanguage from "./SelectLanguage";
 
 import { useTranslation } from "react-i18next";
 import Links from "./shared/Links";
+import { useAuth } from "../auth";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = ({ language, currenLanguageCode, currenLanguage }) => {
+const Navbar = ({showLinks}) => {
   const [showNav, setShowNav] = useState(false);
+  const { setSuccess , currenLanguageCode} = useAuth()
 
   const handleShowNav = () => {
     setShowNav(false);
   };
 
   const { t } = useTranslation();
+  const navigate = useNavigate()
   return (
     <div className="tw-relative tw-w-full tw-flex tw-justify-center tw-items-center tw-flex-col">
       {/* START NAV */}
       <div className="tw-p-4 tw-w-full tw-z-10 tw-flex tw-justify-center">
         <div className="tw-flex tw-justify-between tw-items-center tw-w-[85%] lg:tw-w-[90%]">
-          <div className="tw-w-[100px] tw-bg-gray-300 hover:tw-bg-red-400 tw-cursor-pointer tw-rounded-md lg:tw-w-[90px] sm:tw-w-[70px] tw-duration-300">
+          <div className="tw-w-[100px] tw-bg-gray-300 hover:tw-bg-red-400 tw-cursor-pointer tw-rounded-md lg:tw-w-[90px] sm:tw-w-[70px] tw-duration-300"
+          onClick={() => {
+            setSuccess(false);
+            navigate("/");
+            console.log("good")
+          }}
+          >
             <img src={logo} className="tw-w-full" />
           </div>
 
+          { showLinks?
+          <>
           <div
             className="tw-hidden lg:tw-block tw-p-3 sm:tw-p-2 tw-text-2xl sm:tw-text-xl tw-text-white tw-shadow-md tw-rounded-md tw-bg-red-500 hover:tw-bg-red-700 tw-cursor-pointer tw-duration-500"
             onClick={() => setShowNav(true)}
           >
             <AiOutlineMenu />
           </div>
-
           <div
             className={`lg:tw-absolute tw-right-0
                 ${showNav ? "tw-top-0" : "tw-top-[-1000px]"}
@@ -85,16 +96,16 @@ const Navbar = ({ language, currenLanguageCode, currenLanguage }) => {
               />
             </div>
           </div>
+          </>
+          : null
+          }
           <div>
-            <SelectLanguage
-              language={language}
-              currenLanguageCode={currenLanguageCode}
-              currenLanguage={currenLanguage}
-            />
+            <SelectLanguage />
           </div>
         </div>
       </div>
       {/* END NAV */}
+      { showLinks ?
       <div className="tw-flex tw-flex-col tw-gap-2 tw-h-[70vh] tw-items-center tw-justify-center md:tw-p-3">
         <h1
           className=" tw-mt-5 tw-text-4xl lg:tw-text-2xl sm:tw-text-xl tw-font-extrabold tw-leading-[1.15] tw-tw-text-black tw-text-center"
@@ -120,6 +131,7 @@ const Navbar = ({ language, currenLanguageCode, currenLanguage }) => {
           {t("description")}
         </h2>
       </div>
+      : null }
     </div>
   );
 };

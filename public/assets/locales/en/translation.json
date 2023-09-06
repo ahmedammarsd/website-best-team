@@ -29,15 +29,15 @@
     "RealityCard9": "fashion",
 
     "titleContestsTopic": "Topics covered by the competition",
-    "topic1": "Mathematical history",
+    "topic1": "sport history",
     "topic2": "sports figures",
     "topic3": "sports results",
-    "topic4": "Mathematical laws",
+    "topic4": "sport laws",
     "topic5": "Sports Events",
-    "topic6": "Mathematical analysis",
+    "topic6": "sport analysis",
     "topic7": "Olympic Games",
     "topic8": "Sports photos",
-    "topic9": "Mathematical criticism",
+    "topic9": "sport criticism",
     "topic10": "Sports media",
     "topic11": "Sports management",
     "topic12": "Referees decisions",
@@ -52,5 +52,10 @@
     "pieTitle4":"Prize",
     "buttonMore": "more",
 
-    "location": "Company location"
+    "location": "Company location",
+
+    "username":"username",
+    "password":"password",
+    "login": "login",
+    "error": "Sorry, Error in username or password"
 }

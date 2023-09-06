@@ -1,8 +1,16 @@
 import React, { useEffect } from "react";
 import i18next from "i18next";
 import { MdLanguage } from "react-icons/md";
+import { useAuth } from "../auth";
+import { useTranslation } from "react-i18next"
 
-const SelectLanguage = ({ language, currenLanguageCode }) => {
+const SelectLanguage = () => {
+  const { language , currenLanguage , changeLang, currenLanguageCode} = useAuth();
+  const { t } = useTranslation();
+  // useEffect( () => {
+  //   document.body.dir = currenLanguage.dir || "ltr"
+  //   document.title = t("web_title")
+  // },[currenLanguage]);
   return (
     <div className="tw-flex tw-items-center tw-justify-between tw-shadow-md tw-overflow-hidden tw-rounded-md hover:tw-bg-red-500 tw-duration-300">
       {language.map(({ code, name }) => (
@@ -12,7 +20,7 @@ const SelectLanguage = ({ language, currenLanguageCode }) => {
           className={` ${
             currenLanguageCode === code ? "tw-hidden" : ""
           } tw-text-red-500 hover:tw-text-white tw-font-semibold tw-text-sm sm:tw-text-xs tw-p-2 sm:tw-p-1 tw-px-2.5 sm:tw-px-1.5  `}
-          onClick={() => i18next.changeLanguage(code)}
+          onClick={() => changeLang(code)}
         >
           <span>{name}</span>
         </button>

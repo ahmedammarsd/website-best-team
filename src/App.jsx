@@ -1,73 +1,25 @@
-import { useEffect, useState } from 'react';
-import i18next from 'i18next';
-import { useTranslation } from 'react-i18next';
+import React , { useEffect } from 'react';
+import { Routes , Route } from "react-router-dom";
 import Aos from 'aos';
-import Navbar from './components/Navbar';
-import Contests from './components/Contests';
-import RealityShows from "./components/RealityShows"
-import ContestsTopics from './components/ContestsTopics';
-import Charts from './components/Chart';
-import Location from './components/Location';
-import Footer from './components/Footer';
-
-
+import Login from './pages/Login';
+import Main from './pages/Main';
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
-
-// OPERATION LANGUAGE /////////////////////////////
-// LANGUAGE IN PROJECT
- const language = [
-  {
-    code: "en",
-    name: "English",
-    country_code: "gb",
-    dir: "ltr",
-  },
-  {
-    code: "ar",
-    name: "العربية",
-    country_code: "sa",
-    dir: "rtl"
-  }
-]
-
- const currenLanguageCode = localStorage.getItem("i18nextLng") || "en"
- const currenLanguage = language.find(l => l.code === currenLanguageCode);
-
-//  const changeLang = (code) => {
-//   i18next.changeLanguage(code);
-//   }
-
-//END OPERATION LANGUAGE /////////////////////////////
-  useEffect( () => {
-    document.body.dir = currenLanguage.dir || "ltr"
-    document.title = t("web_title")
-  },[currenLanguage]);
-
 
   useEffect( () => {
     Aos.init();
   }, [])
 
-
-  const { t } = useTranslation();
   return (
    <div>
-      <div className="main">
-            <div className="gradient" />
-        </div>
-    <Navbar 
-    language={language}
-    currenLanguageCode={currenLanguageCode}
-    currenLanguage={currenLanguage}
-    />
-    <div className="tw-mt-20"></div>
-   <Contests />
-   <RealityShows />
-   <ContestsTopics />
-   <Charts />
-   <Location />
-   <Footer />
+     <Routes>
+       <Route path='/' element={<Login />}  />
+       <Route element={<ProtectedRoute />}>
+          <Route path='/home' element={<Main />}  />
+       </Route>
+       
+     </Routes>
    </div>
   )
 }
