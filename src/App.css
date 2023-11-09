@@ -41,3 +41,46 @@
 .read-the-docs {
   color: #888;
 } */
+.sidebar {
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+.nav-item,
+.navbar {
+  z-index: 10000;
+}
+@media  screen and (max-width:800px) {
+  .sidebar{
+    z-index: 10000000;
+  }
+}
+
+.e-dlg-center-center, .e-quick-popup-wrapper.e-device{
+  z-index: 1000000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.mainContainer {
+  @apply md:tw-m-2 tw-m-10 md:tw-p-2 tw-p-10 tw-bg-white tw-rounded-3xl
+}
+.form-group {
+  @apply tw-flex tw-flex-col tw-gap-2
+}
+.tr {
+  @apply tw-bg-white tw-border-b hover:tw-bg-gray-50 tw-cursor-pointer tw-transition-all tw-duration-300 tw-ease-linear
+}
+.th {
+  @apply tw-text-lg tw-capitalize tw-bg-red-50 tw-text-red-500 tw-px-6 tw-py-5
+}
+.td {
+  @apply tw-text-sm tw-text-gray-900 tw-font-light tw-px-6 tw-py-5 tw-whitespace-nowrap
+}

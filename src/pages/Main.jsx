@@ -1,4 +1,4 @@
-import React , { useEffect }from 'react'
+import  { useEffect }from 'react'
 import { useTranslation } from 'react-i18next';
 import Navbar from "../components/Navbar"
 import Contests from '../components/Contests';
@@ -7,13 +7,13 @@ import ContestsTopics from '../components/ContestsTopics';
 import Charts from '../components/Chart';
 import Location from '../components/Location';
 import Footer from '../components/Footer';
-import { useAuth } from '../auth';
+import { useAuth } from '../context/auth';
 
 
 
 const Main = () => {
 
-  const {  currenLanguage } = useAuth();
+  const { currenLanguage } = useAuth();
 // // OPERATION LANGUAGE /////////////////////////////
 // // LANGUAGE IN PROJECT
 //  const language = [
@@ -41,7 +41,7 @@ const Main = () => {
 // //END OPERATION LANGUAGE /////////////////////////////
 const { t } = useTranslation();
   useEffect( () => {
-    document.body.dir = currenLanguage.dir || "ltr"
+    // document.body.dir = currenLanguage.dir || "ltr"
     document.title = t("web_title")
   },[currenLanguage]);
 

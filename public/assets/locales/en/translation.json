@@ -57,5 +57,22 @@
     "username":"username",
     "password":"password",
     "login": "login",
-    "error": "Sorry, Error in username or password"
+    "error": "Sorry, Error in username or password",
+
+    "mainBoard": "main board",
+    "mainParagraph": "main paragraph",
+    "newsAticales": "news & articales",
+    "users": "users",
+
+    "welcome": "welcome",
+    "page": "page",
+
+    "titleParagraph": "title",
+    "descParagraph": "description",
+    "updateParagraph": "update",
+
+    "imageArticle": "articale image",
+    "titleArticle": "articale title",
+
+    "fullName": "full name"
 }

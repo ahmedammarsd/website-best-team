@@ -57,6 +57,24 @@
     "username":"اسم المستخدم",
     "password":"كلمة المرور",
     "login": "تسجيل دخول",
-    "error": "عذرا, خطا في اسم المستخدم أو كلمة المرور"
+    "error": "عذرا, خطا في اسم المستخدم أو كلمة المرور",
+
+
+    "mainBoard": "اللوحة الرئيسية",
+    "mainParagraph":"الفقرة الرئيسية",
+    "newsAticales" : "الاخبار و المقالات",
+    "users": "المستخدمين",
+
+    "welcome": "مرحبا",
+    "page": "صفحة",
+
+    "titleParagraph": "العنوان",
+    "descParagraph": "الوصف",
+    "updateParagraph": "تحديث",
+
+    "imageArticle": "صورة الخبر",
+    "titleArticle": "عنوان الخبر",
+
+    "fullName": "الاسم الكامل"
     
 }

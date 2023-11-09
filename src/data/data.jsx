@@ -9,6 +9,9 @@ import { BsMusicNoteList } from "react-icons/bs";
 import { GiCook } from "react-icons/gi";
 import { SiRedhat } from "react-icons/si";
 
+import { RxDashboard } from "react-icons/rx"
+import { PiNewspaper , PiTextT } from "react-icons/pi"
+import { LiaUsersCogSolid } from "react-icons/lia"
 
 
 
@@ -121,3 +124,29 @@ export const contestsTopic = [
 //       },
 //     ],
 //   };
+
+
+/// ======= DASHBOARD ======= 
+export const dashboardLinks = [
+    {
+        name: "mainBoard",
+        to: "main-board",
+        icon: <RxDashboard />,
+    },
+    {
+        name: "mainParagraph",
+        to: "main-paragraph",
+        icon: <PiTextT />,
+    },
+    {
+        name: "newsAticales",
+        to: "articles",
+        icon: <PiNewspaper />,
+    },
+    {
+        name: "users",
+        to: "users",
+        icon: <LiaUsersCogSolid />,
+    },
+]
+/// ======= DASHBOARD ======= 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 import logo from "../images/logo.png";
@@ -7,22 +7,23 @@ import { GiJeweledChalice, GiNewspaper } from "react-icons/gi";
 import { SiProgress } from "react-icons/si";
 import { ImLocation } from "react-icons/im";
 import SelectLanguage from "./SelectLanguage";
+import { MdLogin } from "react-icons/md";
 
 import { useTranslation } from "react-i18next";
 import Links from "./shared/Links";
-import { useAuth } from "../auth";
+import { useAuth } from "../context/auth";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = ({showLinks}) => {
-  const [showNav, setShowNav] = useState(false);
-  const { setSuccess , currenLanguageCode} = useAuth()
+  const { setSuccess , currenLanguageCode} = useAuth();
+  const { t } = useTranslation();
+  const navigate = useNavigate()
 
+  const [showNav, setShowNav] = useState(false);
   const handleShowNav = () => {
     setShowNav(false);
   };
 
-  const { t } = useTranslation();
-  const navigate = useNavigate()
   return (
     <div className="tw-relative tw-w-full tw-flex tw-justify-center tw-items-center tw-flex-col">
       {/* START NAV */}
@@ -99,7 +100,19 @@ const Navbar = ({showLinks}) => {
           </>
           : null
           }
-          <div>
+          <div className="tw-flex tw-justify-between tw-items-center tw-gap-2">
+            {/* ===== LOGIN BUTTON ===== */}
+            <div>
+              <button className="tw-flex tw-items-center tw-gap-1 tw-capitalize hover:tw-bg-white hover:tw-text-red-500 tw-duration-500 tw-bg-red-600 tw-text-white tw-shadow-md tw-py-1.5 tw-px-4 xs:tw-px-2 xs:tw-text-xs tw-rounded-md"
+              onClick={() => navigate("/dashboard")}
+              >
+                <span>
+                  {t("login")}
+                </span>
+                <MdLogin />
+              </button>
+            </div>
+            {/* ===== END LOGIN BUTTON ===== */}
             <SelectLanguage />
           </div>
         </div>

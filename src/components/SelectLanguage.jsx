@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
-import i18next from "i18next";
+
 import { MdLanguage } from "react-icons/md";
-import { useAuth } from "../auth";
-import { useTranslation } from "react-i18next"
+import { useAuth } from "../context/auth";
+
 
 const SelectLanguage = () => {
-  const { language , currenLanguage , changeLang, currenLanguageCode} = useAuth();
-  const { t } = useTranslation();
+  const { language  , changeLang, currenLanguageCode} = useAuth();
+  //const { t } = useTranslation();
   // useEffect( () => {
   //   document.body.dir = currenLanguage.dir || "ltr"
   //   document.title = t("web_title")

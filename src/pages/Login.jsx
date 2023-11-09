@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 import bgLogin from "../images/bg-login.jpg";
 import {useTranslation} from "react-i18next";
-import { useAuth } from '../auth';
+import { useAuth } from '../context/auth';
 import Navbar from '../components/Navbar';
 
 const Login = () => {
     const { t } = useTranslation();
 
-    const {login , success, error} = useAuth();
+    const {login , error} = useAuth();
     const navigate = useNavigate()
     const [username , setUsername] = useState("");
     const [password , setPssword] = useState("");

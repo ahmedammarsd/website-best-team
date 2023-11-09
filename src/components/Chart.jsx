@@ -1,4 +1,3 @@
-import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
 //import { dataPie } from "../data/data";
@@ -10,7 +9,7 @@ const Charts = () => {
   const { t } = useTranslation();
 
   const dataPie = {
-    labels: [t("pieTitle1"), t("pieTitle3"), t("pieTitle3"), t("pieTitle4")],
+    labels: [t("pieTitle1"), t("pieTitle2"), t("pieTitle3"), t("pieTitle4")],
     datasets: [
       {
         label: "# of Votes",
