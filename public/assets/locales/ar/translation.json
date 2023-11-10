@@ -72,9 +72,17 @@
     "descParagraph": "الوصف",
     "updateParagraph": "تحديث",
 
+    "add": "إضافة",
+
+    "addCategory": "إضافة فئة",
+    "category": "الفئة",
+    "addNews": "إضافة خبر",
     "imageArticle": "صورة الخبر",
     "titleArticle": "عنوان الخبر",
+    
+    "contentArticle": "محتوى الخبر",
 
-    "fullName": "الاسم الكامل"
+    "fullName": "الاسم الكامل",
+    "addUser": "إضافة مستخدم"
     
 }

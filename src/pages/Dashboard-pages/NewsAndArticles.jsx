@@ -3,24 +3,34 @@ import { useAuth } from "../../context/auth";
 import imageTest from "../../images/celador.png";
 import { LiaEditSolid } from "react-icons/lia";
 import { MdOutlineDeleteSweep } from "react-icons/md";
+import { MdOutlineAdd } from "react-icons/md";
+import Button from "../../components/shared/Button";
+import AddAndUpdateNews from "../../components/Dashboard-components/AddAndUpdateNews";
 
 export const OpreationIcon = ({ icon, isDelete }) => (
   <span
-    className={`tw-p-3 tw-rounded-md tw-text-sm tw-shadow-md ${
+    className={`tw-p-3 tw-rounded-md tw-text-sm tw-shadow-sm tw-border hover:tw-text-white ${
       isDelete
-        ? " tw-bg-red-50 hover:tw-bg-red-500 tw-text-red-500 hover:tw-text-white"
-        : " tw-bg-blue-100 tw-text-blue-600 hover:tw-bg-blue-600 hover:tw-text-white"
+        ? "hover:tw-bg-red-500"
+        : " hover:tw-bg-blue-600"
     } `}
   >
     {icon}
   </span>
 );
 const NewsAndArticles = () => {
-  const { t } = useAuth();
+  const { t , showAddNews , setShowAddNews } = useAuth();
+
   return (
     <div className="mainContainer">
       <HeaderPage title={t("newsAticales")} />
 
+      <div className=" tw-p-3 tw-border-b">
+        <Button text={t("addNews")} icon={<MdOutlineAdd />} onClickFunc={() => setShowAddNews(true)}/>
+      </div>
+      {
+        showAddNews && <AddAndUpdateNews />
+      }
       {/* ==== NEWS AND ARTICLES ==== */}
       <div className="tw-overflow-x-auto sm:-tw-mx-6 lg:-tw-mx-8">
         <div className="tw-py-4 tw-inline-block tw-w-full sm:tw-px-6 lg:tw-px-8">

@@ -68,6 +68,13 @@ export const AuthProvider = ({children}) => {
   //END OPERATION LANGUAGE /////////////////////////////
 
 
+  // ======== STATES FOR CONTROL SHOW AND HIDE WINDONS ADDS & UPDATE IN DASHBOARD ======= 
+   const [showAddNews , setShowAddNews] = useState(false);
+   const [showAddUser , setShowAddUser] = useState(false);
+   const [showAddCategory , setShowAddCategory] = useState(false)
+  // ======== END STATES FOR CONTROL SHOW AND HIDE WINDONS ADDS & UPDATE IN DASHBOARD ======= 
+
+
 
     return (
         <AuthContext.Provider
@@ -75,7 +82,8 @@ export const AuthProvider = ({children}) => {
              login , logout,
             success , setSuccess , error ,
             t , language , currenLanguage , currenLanguageCode , changeLang ,
-            activeMenu , setActiveMenu , screenSize , setScreenSize
+            activeMenu , setActiveMenu , screenSize , setScreenSize , 
+            showAddNews , setShowAddNews , showAddUser , setShowAddUser , showAddCategory , setShowAddCategory
          }}
         >
             {children}

@@ -71,8 +71,16 @@
     "descParagraph": "description",
     "updateParagraph": "update",
 
-    "imageArticle": "articale image",
-    "titleArticle": "articale title",
+    "add": "add",
 
-    "fullName": "full name"
+    "addCategory": "add category",
+    "category": "category",
+    "addNews": "add news",
+    "imageArticle": "news image",
+    "titleArticle": "news title",
+
+    "contentArticle": "news content",
+
+    "fullName": "full name",
+    "addUser": "add user"
 }

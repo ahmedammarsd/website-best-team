@@ -29,7 +29,11 @@ export default {
     extend: {
       backgroundColor:{
         'main-bg': '#FAFBFB',
-        "transparent-black" : "rgba(0,0,0,0.3)",
+        "transparent-black3" : "rgba(0,0,0,0.3)",
+        "transparent-black4" : "rgba(0,0,0,0.4)",
+        "transparent-black5" : "rgba(0,0,0,0.5)",
+        "transparent-black6" : "rgba(0,0,0,0.6)",
+        "transparent-black9" : "rgba(0,0,0,0.9)",
         "transparent-white1" : "rgba(255,255,255,0.1)",
         "transparent-white2" : "rgba(255,255,255,0.2)",
         "transparent-white3" : "rgba(255,255,255,0.3)",

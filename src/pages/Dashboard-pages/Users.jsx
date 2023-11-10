@@ -4,13 +4,21 @@ import { PiUserListLight } from "react-icons/pi";
 import { TiUserDeleteOutline } from "react-icons/ti";
 import { HiOutlineUserPlus } from "react-icons/hi2"
 import { OpreationIcon } from "./NewsAndArticles";
+import Button from "../../components/shared/Button";
+import AddUser from "../../components/Dashboard-components/AddUser";
 
 const Users = () => {
-  const { t } = useAuth();
+  const { t , showAddUser , setShowAddUser } = useAuth();
   return (
     <div className="mainContainer">
       <HeaderPage title={t("users")} />
 
+      <div className=" tw-p-3 tw-border-b">
+        <Button text={t("addUser")} icon={<HiOutlineUserPlus />} onClickFunc={() => setShowAddUser(true)} />
+      </div>
+      {
+        showAddUser && <AddUser />
+      }
       {/* ===== DISPLAY USER ===== */}
 
       <div className="tw-overflow-x-auto sm:-tw-mx-6 lg:-tw-mx-8">

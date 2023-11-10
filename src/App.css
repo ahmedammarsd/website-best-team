@@ -72,6 +72,15 @@
 .mainContainer {
   @apply md:tw-m-2 tw-m-10 md:tw-p-2 tw-p-10 tw-bg-white tw-rounded-3xl
 }
+.absoluteContainer {
+  @apply tw-absolute tw-top-0 tw-left-0 tw-h-screen tw-w-full tw-bg-transparent-black4 tw-flex tw-items-center tw-justify-center tw-z-10
+}
+.absoluteSecondContainer {
+  @apply tw-w-[70%] md:tw-w-[90%] sm:tw-w-[95%] tw-p-5 tw-py-16 tw-px-7 tw-drop-shadow-md tw-border tw-flex tw-items-center tw-justify-center tw-bg-white tw-relative tw-overflow-hidden tw-rounded-md
+}
+.formContainer {
+  @apply tw-w-full tw-flex tw-flex-col tw-gap-5
+}
 .form-group {
   @apply tw-flex tw-flex-col tw-gap-2
 }
