@@ -92,5 +92,7 @@
 
     "serverError": "Sorry, error from the server",
     "errorHappend": "Sorry, an error occurred while connecting",
-    "deleteSuccessflly": "Delete Successfully"
+    "deleteSuccessflly": "Delete Successfully",
+
+    "adminMsg": "only admin can add and update users"
 }

@@ -30,7 +30,7 @@ const Navbar = ({ showLinks }) => {
     document.title = t("link6")
   },[])
 
-  return (
+  return ( 
     <div className="tw-relative tw-w-full tw-flex tw-justify-center tw-items-center tw-flex-col">
       {/* START NAV */}
       <div className="tw-p-4 tw-w-full tw-z-10 tw-flex tw-justify-center">

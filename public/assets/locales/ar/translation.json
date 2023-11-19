@@ -93,6 +93,8 @@
 
     "serverError": "عذرا خطا من الخادم",
     "errorHappend": "عذرا حدث خطا اثناء الاتصال",
-    "deleteSuccessflly": "تم الحذف بنجاح"
+    "deleteSuccessflly": "تم الحذف بنجاح",
+
+    "adminMsg": "يمكن للمسؤول فقط إضافة المستخدمين وتحديثهم"
     
 }

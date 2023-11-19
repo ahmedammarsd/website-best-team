@@ -192,7 +192,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
                text={
                 userStates.loginIsLoading
                   ? t("loading")
-                  : t("lgoin")
+                  : t("login")
               }
               isDisabled={userStates.loginIsLoading}
               />

@@ -20,6 +20,8 @@ const Users = () => {
   const [showSuccessDelete, setShowSuccessDelete] = useState(false);
   const [showErrorDelete, setShowErrorDelete] = useState(false);
 
+  const userData = ( JSON.parse(localStorage.getItem("user")))
+  
   useEffect(() => {
     dispatch(getUsers());
   }, []);
@@ -46,7 +48,11 @@ const Users = () => {
     <div className="mainContainer">
       <HeaderPage title={t("users")} />
 
-      <div className=" tw-p-3 tw-border-b">
+      {
+        userData?.user?.email === "admin@admin.com" 
+        ?
+        <>
+        <div className=" tw-p-3 tw-border-b">
         <Button
           text={t("addUser")}
           icon={<HiOutlineUserPlus />}
@@ -130,8 +136,16 @@ const Users = () => {
           </div>
         </div>
       </div>
-
-      {/* ===== END DISPLAY USER ===== */}
+      </>
+      /* ===== END DISPLAY USER ===== */
+      : <div className="tw-w-full tw-justify-center tw-items-center">
+        <span className=" tw-text-red-500 tw-text-center tw-p-4 tw-rounded-md tw-block tw-bg-red-50 tw-capitalize tw-text-lg xs:tw-text-sm">
+          {t("adminMsg")}
+        </span>
+      </div>
+      }
+      
+      
     </div>
   );
 };
