@@ -1,4 +1,3 @@
-import React from "react";
 import RedHr from "./shared/RedHr";
 import { useTranslation } from "react-i18next";
 

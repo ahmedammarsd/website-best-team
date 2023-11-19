@@ -1,6 +1,6 @@
 import { useAuth } from "../../context/auth"
 
-const Input = ({type , lang , onChangeFunc , onBlurFunc , onFocusFunc , statusInput}) => {
+const Input = ({type , lang , ref , dValue , onChangeFunc , onBlurFunc , onFocusFunc , statusInput}) => {
     const { currenLanguageCode } = useAuth();
   return (
     <div className="tw-relative tw-overflow-hidden tw-w-full">
@@ -8,8 +8,10 @@ const Input = ({type , lang , onChangeFunc , onBlurFunc , onFocusFunc , statusIn
         onChange={onChangeFunc}
         onFocus={onFocusFunc}
         onBlur={onBlurFunc}
+        defaultValue={dValue}
+        ref={ref}
         dir="auto"
-        className={`tw-w-full tw-text-gray-800 tw-border-b tw-py-1.5 focus:tw-outline-none tw-ring-0
+        className={`tw-w-full tw-text-gray-800 tw-border-b-2 tw-py-1.5 focus:tw-outline-none tw-ring-0
         file:tw-py-2 file:tw-px-6 file:tw-bg-red-50 hover:file:tw-bg-red-200 
         file:tw-rounded-md file:tw-border-0 tw-duration-300 file:tw-cursor-pointer
         ${statusInput ? "" : "tw-border-red-500"}

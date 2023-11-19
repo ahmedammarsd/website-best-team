@@ -1,12 +1,16 @@
 import { Navigate , Outlet } from "react-router-dom";
-import { useAuth } from '../context/auth';
+//import { useSelector } from "react-redux";
+//import { useEffect, useState } from "react";
 
 export default function ProtectedRoute() {
-    const {success} = useAuth();
-    
+   // const userStates = useSelector((state) => state.user)
+ //   const accessToken = userStates.datalogin?.token;
+    const userData = ( JSON.parse(localStorage.getItem("user")))
+   // const [checkToken , setCheckToken] = useState(true);
+
   return (
-    success === true 
+     userData  
     ? <Outlet /> 
-    : <Navigate to='/'/>
+    : <Navigate to='/log-in'/>
   )
 }

@@ -1,6 +1,6 @@
 import { useAuth } from "../../context/auth"
 
-const Textarea = ({ lang , onChangeFunc , onBlurFunc , onFocusFunc , statusInput}) => {
+const Textarea = ({ lang , dValue, onChangeFunc , onBlurFunc , onFocusFunc , statusInput}) => {
     const { currenLanguageCode } = useAuth();
   return (
     <div className="tw-relative tw-overflow-hidden tw-w-full">
@@ -9,6 +9,7 @@ const Textarea = ({ lang , onChangeFunc , onBlurFunc , onFocusFunc , statusInput
         onChange={onChangeFunc}
         onFocus={onFocusFunc}
         onBlur={onBlurFunc}
+        defaultValue={dValue}
         dir="auto"
         className={`tw-w-full tw-text-gray-800 tw-border-b tw-py-1.5 focus:tw-outline-none tw-ring-0
         ${statusInput ? "" : "tw-border-red-500"}

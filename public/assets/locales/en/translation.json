@@ -54,7 +54,7 @@
 
     "location": "Company location",
 
-    "username":"username",
+    "email":"email",
     "password":"password",
     "login": "login",
     "error": "Sorry, Error in username or password",
@@ -82,5 +82,15 @@
     "contentArticle": "news content",
 
     "fullName": "full name",
-    "addUser": "add user"
+    "addUser": "add user",
+
+    "loaing": "loading...",
+    "updateLoadng": "update loading...",
+
+    "successUploadeImage": "The image has been uploaded",
+    "errorInUploadeImage": "Sorry, Error In Uploade image",
+
+    "serverError": "Sorry, error from the server",
+    "errorHappend": "Sorry, an error occurred while connecting",
+    "deleteSuccessflly": "Delete Successfully"
 }

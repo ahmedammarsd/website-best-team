@@ -32,7 +32,7 @@ const Charts = () => {
   };
 
   return (
-    <div className="tw-py-16  tw-relative tw-flex tw-justify-center tw-items-center tw-group">
+    <div className="tw-py-16 tw-relative tw-flex tw-justify-center tw-items-center tw-group">
       <div
         className=" tw-w-[85%] tw-px-5 lg:tw-px-5 md:tw-px-3 sm:tw-px-2 tw-mx-auto tw-py-6 tw-my-2 tw-overflow-hidden"
         data-aos="fade-left"

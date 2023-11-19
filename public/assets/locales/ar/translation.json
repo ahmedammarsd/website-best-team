@@ -54,7 +54,7 @@
 
     "location": "موقع الشركة",
 
-    "username":"اسم المستخدم",
+    "email":"الايميل",
     "password":"كلمة المرور",
     "login": "تسجيل دخول",
     "error": "عذرا, خطا في اسم المستخدم أو كلمة المرور",
@@ -83,6 +83,16 @@
     "contentArticle": "محتوى الخبر",
 
     "fullName": "الاسم الكامل",
-    "addUser": "إضافة مستخدم"
+    "addUser": "إضافة مستخدم",
+
+    "loaing": "جاري الاضافة...",
+    "updateLoadng": "جاري التعديل...",
+
+    "successUploadeImage": "تم رفع الصورة",
+    "errorInUploadeImage": "عذرا، خطأ في تحميل الصورة",
+
+    "serverError": "عذرا خطا من الخادم",
+    "errorHappend": "عذرا حدث خطا اثناء الاتصال",
+    "deleteSuccessflly": "تم الحذف بنجاح"
     
 }

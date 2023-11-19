@@ -70,8 +70,10 @@ export const AuthProvider = ({children}) => {
 
   // ======== STATES FOR CONTROL SHOW AND HIDE WINDONS ADDS & UPDATE IN DASHBOARD ======= 
    const [showAddNews , setShowAddNews] = useState(false);
+   const [isUpdateNews , setIsUpdateNews] = useState(false);
+   const [newsId , setNewsId] = useState(0);
    const [showAddUser , setShowAddUser] = useState(false);
-   const [showAddCategory , setShowAddCategory] = useState(false)
+   const [showAddCategory , setShowAddCategory] = useState(false);
   // ======== END STATES FOR CONTROL SHOW AND HIDE WINDONS ADDS & UPDATE IN DASHBOARD ======= 
 
 
@@ -83,7 +85,8 @@ export const AuthProvider = ({children}) => {
             success , setSuccess , error ,
             t , language , currenLanguage , currenLanguageCode , changeLang ,
             activeMenu , setActiveMenu , screenSize , setScreenSize , 
-            showAddNews , setShowAddNews , showAddUser , setShowAddUser , showAddCategory , setShowAddCategory
+            showAddNews , setShowAddNews , showAddUser , setShowAddUser , showAddCategory , setShowAddCategory ,
+            isUpdateNews , setIsUpdateNews , newsId , setNewsId
          }}
         >
             {children}

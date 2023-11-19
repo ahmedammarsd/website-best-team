@@ -10,6 +10,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/auth.jsx';
+import { Provider } from 'react-redux';
+import store from './app/store.jsx';
 
 i18next
 .use(initReactI18next)
@@ -31,9 +33,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Suspense fallback={<Loading />}>
   <React.StrictMode>
     <AuthProvider>
+      <Provider store={store}>
     <BrowserRouter>
     <App />
     </BrowserRouter>
+    </Provider>
     </AuthProvider>
   </React.StrictMode>
   </Suspense>,

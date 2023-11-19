@@ -8,6 +8,7 @@ import Charts from '../components/Chart';
 import Location from '../components/Location';
 import Footer from '../components/Footer';
 import { useAuth } from '../context/auth';
+import News from '../components/News';
 
 
 
@@ -53,6 +54,7 @@ const { t } = useTranslation();
         </div>
     <Navbar showLinks={true} />
     <div className="tw-mt-20"></div>
+    <News />
    <Contests />
    <RealityShows />
    <ContestsTopics />
