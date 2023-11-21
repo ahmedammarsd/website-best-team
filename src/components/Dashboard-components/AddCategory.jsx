@@ -48,7 +48,7 @@ const AddCategory = () => {
     const handleClose = () => {
       setShowAddCategory(false)
     }
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         checkCategoryEn(categoryEn);
         checkCategoryAr(categoryAr);
@@ -59,7 +59,7 @@ const AddCategory = () => {
         }
 
         if (categoryAr !== "" && categoryEn !== "" && categoryIsValidAr && categoryIsValidEn) {
-          dispatch(addCategory(dataCategory));
+         await dispatch(addCategory(dataCategory));
           if (categoryStates.status === "success") {
             setTimeout(() =>  setShowAddCategory(false) , 2000 )
           }

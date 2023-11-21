@@ -42,12 +42,12 @@ const NewsAndArticles = () => {
   useEffect( () => {
     document.title = t(dashboardLinks[2].to);
   },[currenLanguageCode]);
-  const handleDelete = (id) => {
+  const handleDelete = async (id) => {
     const data = {
       id: id
     }
     
-    dispatch(archiveNews(data));
+   await dispatch(archiveNews(data));
     if (newsStates.archiveStatus === "success") {
       setShowSuccessDelete(true)
       setTimeout(() => setShowSuccessDelete(false), 7000);

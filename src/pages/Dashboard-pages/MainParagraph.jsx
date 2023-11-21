@@ -44,7 +44,7 @@ const MainParagraph = () => {
         setIsTitleIsValidAr(false);
       } else if (!regexNoNumber.test(inputValue)) {
         setIsTitleIsValidAr(false);
-      } else if (titleParaAr.length < 4) {
+      } else if (titleParaAr?.length < 4) {
         setIsTitleIsValidAr(false);
       } else {
         setIsTitleIsValidAr(true);
@@ -57,7 +57,7 @@ const MainParagraph = () => {
     const checkDescEn = (descVal) => {
       if (descVal === "") {
         setIsValidDescPara(false);
-      }  else if (descPara.length < 4) {
+      }  else if (descPara?.length < 4) {
         setIsValidDescPara(false);
       } else {
         setIsValidDescPara(true);
@@ -67,7 +67,7 @@ const MainParagraph = () => {
     const checkDescAr = (descVal) => {
       if (descVal === "") {
         setIsValidDescParaAr(false);
-      }  else if (descParaAr.length < 4) {
+      }  else if (descParaAr?.length < 4) {
         setIsValidDescParaAr(false);
       } else {
         setIsValidDescParaAr(true);

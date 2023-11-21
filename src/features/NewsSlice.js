@@ -45,6 +45,9 @@ export const getNews = createAsyncThunk("getNews" , async (arg , thunkApi) => {
         if (err.response.status === 500){
             return thunkApi.rejectWithValue("serverError")
         }
+        else if (err.name == "AxiosError"){
+            return thunkApi.rejectWithValue(err.message)
+        }
         else {
             return thunkApi.rejectWithValue("errorHappend");
         }
@@ -69,7 +72,7 @@ export const updateNews = createAsyncThunk("updateNews" , async (data , thunkApi
 /// ======= END UPDATE NEWS ======
 
 
-/// ======= UPDATE NEWS ======
+/// ======= ARCHIVE NEWS ======
 export const archiveNews = createAsyncThunk("archiveNews" , async (data , thunkApi) => {
     try {
          await axios.patch(`${BaseUrl}news/update/archive`, data);
@@ -83,7 +86,7 @@ export const archiveNews = createAsyncThunk("archiveNews" , async (data , thunkA
         }
     } 
 })
-/// ======= END UPDATE NEWS ======
+/// ======= END ARCHIVE NEWS ======
 
 const news = createSlice({
     name: "news",

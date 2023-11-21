@@ -23,9 +23,26 @@ function App() {
   const mainPara = useSelector((state) => state.mainPara);
   useEffect( () => {
     Aos.init();
-    // axios.get(`${BaseUrl}main_paragraphs`)
+    // axios.get(`${BaseUrl}main_paragraphs`) 
     // .then((data) => console.log(data))
-    // .catch((er) => console.log(er))
+    // .catch((er) => console.log(er));
+
+    // async function testFetch () {
+    //   console.log("start test fetch")
+    //   try {
+    //     const response = await fetch(`${BaseUrl}news`)
+    //     const data = await response.json();
+    //     console.log (data)
+    //   }
+    //   catch (err) {
+    //     console.log(err)
+    //   }
+    //   finally{
+    //     console.log("end test fetch")
+    //   }
+    // }
+    
+    // testFetch()
     const getLen = mainPara.data
     if (getLen?.length === 0){
      dispatch(getMainParagraph());

@@ -1,4 +1,6 @@
-export const BaseUrl = "http://localhost:6600/best_team/";
+//export const BaseUrl = "http://localhost:6600/best_team/";
+// export const BaseUrl = "http://api.bestteam.tv/";
+export const BaseUrl = "https://best-team-api.onrender.com/";
 
 // CALC DAYS FOR ADD NEWS OR ARTICLES
 //  export const calcDays = (date) => {

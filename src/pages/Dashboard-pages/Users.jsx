@@ -49,7 +49,7 @@ const Users = () => {
       <HeaderPage title={t("users")} />
 
       {
-        userData?.user?.email === "admin@admin.com" 
+        userData?.user?.email === "admin@admin.tv"  || userData?.user?.email === "sn@gmail.com"
         ?
         <>
         <div className=" tw-p-3 tw-border-b">
